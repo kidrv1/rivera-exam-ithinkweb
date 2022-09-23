@@ -1,6 +1,8 @@
 >A CRUD app examination for IThinkWeb Corporation
 >
->Live Demo: rivera-exam-ithinkweb.netlify.app
+>Live demo: https://rivera-exam-ithinkweb.herokuapp.com/
+
+##Node version: 14.x
 
 ## Build Setup
 
