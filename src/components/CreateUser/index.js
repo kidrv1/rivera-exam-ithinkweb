@@ -23,6 +23,17 @@ const CreateUser = props => {
         props.createUser(user);
       }}
     >
+    <div className="form-group">
+      <label>Email</label>
+      <input
+        type="email"
+        name="email"
+        value={user.email}
+        onChange={onInputChange}
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="The email must be a valid email address."
+        required/>
+    </div>
       <div className="form-group">
         <label>First Name</label>
         <input
@@ -43,17 +54,6 @@ const CreateUser = props => {
           onChange={onInputChange}
           pattern="[A-Za-z]{3,}"
           title="Name must have no numbers or special characters and at least 3 or more characters."
-          required/>
-      </div>
-      <div className="form-group">
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          value={user.email}
-          onChange={onInputChange}
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          title="The email must be a valid email address."
           required/>
       </div>
       <div className="form-group form-group--actions">

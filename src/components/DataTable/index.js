@@ -13,7 +13,8 @@ const DataTable = props => {
       <table className="data-table">
         <thead>
           <tr>
-            <th></th>
+            <th>ID</th>
+            <th>Avatar</th>
             <th
               onClick={() => {
                 props.onSortChange("name");
@@ -51,6 +52,7 @@ const DataTable = props => {
           {props.users.length ? (
             props.users.map(user => (
               <tr key={user.id}>
+                <td>{user.id}</td>
                 <td className="field-avatar">
                   <img
                     src={user.avatar ? user.avatar : PlaceholderImg}
