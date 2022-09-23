@@ -40,8 +40,8 @@ const DataTable = props => {
               }}
             >
               <span className="column-sort">
-                E-Mail
-                <img src={SortIcon} alt="E-Mail" />
+                Email
+                <img src={SortIcon} alt="Email" />
               </span>
             </th>
             <th>Actions</th>

@@ -48,7 +48,7 @@ const UpdateUser = props => {
         />
       </div>
       <div className="form-group">
-        <label>E-Mail</label>
+        <label>Email</label>
         <input
           type="email"
           name="email"
