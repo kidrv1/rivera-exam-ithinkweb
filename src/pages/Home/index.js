@@ -30,8 +30,8 @@ function Home() {
                 <h1>Angel Summer Rain M. Rivera</h1>
                     <div className="pt-3">
                         <h5>Contact Me</h5>
-                        <a href="mailto:rivera.angelsummer@gmail.com" className="btn btn-outline-primary" type="button">rivera.angelsummer@gmail.com</a>&nbsp;
-                        <a href="tel:+639674567332" className="btn btn-outline-primary" type="button">(+63) 967-4567-332</a>
+                        <a href="mailto:rivera.angelsummer@gmail.com" className="btn btn-outline-primary m-1" type="button">rivera.angelsummer@gmail.com</a>
+                        <a href="tel:+639674567332" className="btn btn-outline-primary m-1" type="button">(+63) 967-4567-332</a>
                     </div>
                 </div>
               </div>
