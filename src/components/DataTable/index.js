@@ -17,6 +17,16 @@ const DataTable = props => {
             <th>Avatar</th>
             <th
               onClick={() => {
+                props.onSortChange("email");
+              }}
+            >
+              <span className="column-sort">
+                Email
+                <img src={SortIcon} alt="Email" />
+              </span>
+            </th>
+            <th
+              onClick={() => {
                 props.onSortChange("name");
               }}
             >
@@ -35,16 +45,6 @@ const DataTable = props => {
                 <img src={SortIcon} alt="Last Name" />
               </span>
             </th>
-            <th
-              onClick={() => {
-                props.onSortChange("email");
-              }}
-            >
-              <span className="column-sort">
-                Email
-                <img src={SortIcon} alt="Email" />
-              </span>
-            </th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -59,9 +59,9 @@ const DataTable = props => {
                     alt={user.first_name}
                   />
                 </td>
+                <td>{user.email}</td>
                 <td>{user.first_name}</td>
                 <td>{user.last_name}</td>
-                <td>{user.email}</td>
                 <td className="field-actions">
                   <button
                     className="primary-btn"
